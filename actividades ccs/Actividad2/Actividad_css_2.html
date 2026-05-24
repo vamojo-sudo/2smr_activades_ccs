@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actividad 2 CSS – 2º SMR</title>
+  <link rel="stylesheet" href="./css/ccs2.css" />
+</head>
+<body>
+  <header>
+    <h1>Actividad 2 de CSS</h1>
+    <nav>
+      <a href="#pseudoclases">Pseudoclases</a>
+      <a href="#espaciado">Espaciado y bordes</a>
+      <a href="#selectores">Selectores</a>
+      <a href="#selectores">Esquinas redondeadas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pseudoclases">
+      <h2>1) Pseudoclases básicas</h2>
+      <p>
+        Aplica estilos con <code>:hover</code>, <code>:active</code>, <code>:focus</code> y <code>:first-child</code>.
+        (Ej.: cambiar color de fondo/Texto al pasar el ratón o al hacer clic.)
+      </p>
+      <a class="btn" href="#">Enlace interactivo</a>
+      <button class="btn-sec">Botón</button>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" placeholder="Haz foco aquí" />      
+      <ul class="lista-demo">
+        <li>Primer ítem (debe verse distinto con :first-child)</li>
+        <li>Segundo ítem</li>
+        <li>Tercer ítem</li>
+      </ul>
+    </section>
+    <section id="espaciado">
+      <h2>2) Espaciado y bordes</h2>
+      <article class="caja">
+        <h3>Caja de ejemplo</h3>
+        <p>Aplica <strong>margin</strong> fuera, <strong>padding</strong> dentro y un <strong>border</strong> visible. Puedes añadir <code>outline</code> para ver la diferencia.</p>
+      </article>
+    </section>
+    <section id="selectores">
+      <h2>3) Selectores combinados simples</h2>
+      <p>Estiliza usando <code>#contenedor &gt; span</code> (hijo directo) y <code>#contenedor + p</code> (hermano adyacente).</p>
+      <div id="contenedor">
+        <span class="hijo">Soy hijo directo (span)</span>        
+        <div class="nieto">
+          <span>No soy hijo directo (soy nieto)</span>
+        </div>
+        <span>Yo también soy hijo directo</span>
+      </div>
+      <p class="adyacente">Párrafo adyacente al contenedor</p>
+      <p>Otro párrafo (no adyacente inmediato)</p>
+    </section>
+    <section id="radius">
+      <h2>4) Esquinas redondeadas</h2>
+      <p>Coloca estas 3 cajas en fila (puedes usar <code>flex</code> o <code>inline-block</code>):</p>
+      <ol>
+        <li>.b1 → solo la esquina superior izquierda redondeada</li>
+        <li>.b2 → solo la esquina superior derecha redondeada</li>
+        <li>.b3 → todas las esquinas redondeadas</li>
+      </ol>
+      <div class="fila">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Fecha:</strong> <span id="fecha">DD/MM/AAAA</span></p>
+    <p><strong>Alumno:</strong> <span id="alumno">(Escribe aquí el nombre)</span></p>
+  </footer>
+</body>
+</html>
